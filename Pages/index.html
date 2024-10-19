@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="E-Certify & Automated Document Verification System"
+    />
+    <meta name="author" content="Subhadip" />
+    <meta property="og:site_name" content="AuthenChain" />
+    <meta property="og:site" content="authenchain.com" />
+    <meta property="og:title" content="AuthenChain" />
+    <meta
+      property="og:description"
+      content="AuthenChain Is A Website For Automated Document Verification System"
+    />
+    <meta property="og:image" content="../assets/images/1.png" />
+    <meta property="og:url" content="#ABOUT" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <title>AuthenChain</title>
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="../css/loader.css" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="../css/aos.min.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/1.png" />
+  </head>
+  <body>
+    <div class="loader-wraper">
+      <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!--NavBar Start-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="fa-brands fa-hive home_text"></i>
+          <span class="home_text">Authen</span>Chain
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Upload.html">Upload </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Verify.html">Verify </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Delete.html">Delete </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Admin.html">Admin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Audit.html">Audit Logs</a>
+            </li>
+          </ul>
+
+          <div class="d-flex">
+            <button
+              id="loginButton"
+              onclick="connect()"
+              class="btn main-button"
+            >
+              Login
+            </button>
+            <button
+              id="logoutButton"
+              onclick="disconnect()"
+              class="btn main-button"
+            >
+              Logout
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <section class="home py-5 d-flex align-items-center" id="header">
+      <video autoplay muted loop id="myVideo">
+        <source src="../assets/videos/2.mp4" type="video/mp4" />
+      </video>
+      <div class="container text text-light py-5" data-aos="fade-right">
+        <h1 class="headline text">
+          E-Certify & <span class="text-info">Automated</span> <br />
+          Document Verification System
+        </h1>
+        <p class="para py-3">
+          A modern & secure way of managing student documents using Ethereum
+          Blockchain
+          <br />
+          To Verify The Authenticity Of Your Documents Online Easily And Safely
+        </p>
+
+        <div class="my-3">
+          <a class="btn bg-danger text-white" href="verify.html">Verify</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Information -->
+    <section class="information">
+      <div class="container-fluid">
+        <div class="row text-light">
+          <div class="col-lg-4 text-center p-5" data-aos="zoom-in">
+            <img src="../assets/images/2.png" width="150" />
+            <h4 class="py-3">Less Cost</h4>
+            <p class="para-light">
+              with Authen Chain uploading any document cost only
+              <span class="text-warning"> 0.01 &dollar; 😮</span>
+              so you can upload without caring about the Operation cost
+            </p>
+          </div>
+          <div class="col-lg-4 text-center p-5" data-aos="zoom-in">
+            <img src="../assets/images/3.png" width="150" />
+            <h4 class="py-3">Fast Process</h4>
+            <p class="para-light">
+              Verfying Cirtificates takes just
+              <span class="text-warning"> 1 Second 😳 </span>
+            </p>
+          </div>
+          <div class="col-lg-4 text-center p-5" data-aos="zoom-in">
+            <img src="../assets/images/4.png" width="150" />
+            <h4 class="py-3">Secure</h4>
+            <p class="para-light">
+              100% Secure & Transparent all operations With Blockchain
+              Technology 🔒
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section
+      id="about"
+      class="about d-flex align-items-center text-light py-5"
+      id="about"
+    >
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-7" data-aos="fade-right">
+            <p class="main-header-section">ABOUT US</p>
+            <h1>WE ARE TOP <br /></h1>
+            <p class="py-2 para-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed
+              accusantium aut dolores inventore architecto modi cupiditate
+              eligendi corporis, illum illo culpa. Reiciendis, molestias. Illum
+              voluptatum quisquam ad veritatis dolorem.
+            </p>
+            <p class="py-2 para-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed
+              accusantium aut dolores inventore architecto modi cupiditate
+              eligendi corporis, illum illo culpa. Reiciendis, molestias. Illum
+              voluptatum quisquam ad veritatis dolorem.
+            </p>
+
+            <div class="my-3">
+              <a class="btn bg-white" href="#your-link">Learn More</a>
+            </div>
+          </div>
+          <div class="col-lg-5 text-center py-4 py-sm-0" data-aos="fade-down">
+            <img class="img-fluid" src="../assets/images/5.jpg" alt="about" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="ourwork" class="work d-flex align-items-center py-5">
+      <div class="container text-light">
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right">
+            <img class="img-fluid" src="../assets/images/6.jpg" alt="work" />
+          </div>
+          <div
+            class="col-lg-5 d-flex align-items-center px-4 py-3"
+            data-aos="zoom-in"
+          >
+            <div class="row">
+              <div class="text-center text-lg-start py-4 pt-lg-0">
+                <p class="main-header-section">OUR WORK</p>
+                <h2 class="py-2">Explore unlimited possibilities</h2>
+                <p class="para-light">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Dignissimos dicta mollitia totam explicabo obcaecati quia
+                  laudantium repudiandae.
+                </p>
+              </div>
+              <div class="container" data-aos="fade-up">
+                <div class="row g-5">
+                  <div class="col-6 text-start">
+                    <i class="fas fa-briefcase fa-2x text-start"></i>
+                    <h2
+                      class="purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="128"
+                      data-purecounter-duration="1"
+                    >
+                      1
+                    </h2>
+                    <p>UNIVERSITIES SERVED</p>
+                  </div>
+                  <div class="col-6">
+                    <i class="fas fa-award fa-2x"></i>
+                    <h2
+                      class="purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="2917"
+                      data-purecounter-duration="1"
+                    >
+                      1
+                    </h2>
+                    <p>VERIFIED CIRTIFACATES</p>
+                  </div>
+                  <div class="col-6">
+                    <i class="fas fa-users fa-2x"></i>
+                    <h2
+                      class="purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="1255"
+                      data-purecounter-duration="1"
+                    >
+                      1
+                    </h2>
+                    <p>ACTIVE EXPORTERS</p>
+                  </div>
+                  <div class="col-6">
+                    <i class="fas fa-clock fa-2x"></i>
+                    <h2
+                      class="purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="1157"
+                      data-purecounter-duration="1"
+                    >
+                      1
+                    </h2>
+                    <p>GOOD REVIEWS</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 item">
+            <h3 data-aos="fade-right">Services</h3>
+            <ul data-aos="zoom-in">
+              <li><a href="#">Ethereum</a></li>
+              <li><a href="#">Blockchain Tech.</a></li>
+              <li><a href="#">Smart Contracts </a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 item">
+            <h3 data-aos="fade-right">About us</h3>
+            <ul data-aos="zoom-in">
+              <li><a href="about.html">Company</a></li>
+              <li><a href="about.html">Team</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 item text">
+            <h3 data-aos="fade-right">
+              <i class="fa-brands fa-hive"></i>
+              AuthenChain
+            </h3>
+            <p data-aos="zoom-in">
+              The AuthenChain platform is a leading Document Verification platform
+              designed to bring efficiency and security to your operations.
+            </p>
+          </div>
+          <div class="col-md text-center text-md-start">
+            <h3 data-aos="fade-right">Credits</h3>
+            <ul data-aos="zoom-in">
+              <li>
+                <a
+                  href="https://www.pexels.com/"
+                  title="Free stock photos, royalty free images & videos"
+                  >Free stock photos, royalty-free images & videos by Pexels</a
+                >
+              </li>
+              <li>
+                <a href="https://www.freepik.com/"
+                  >Futuristic background vector created by freepik -
+                  www.freepik.com</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://ethereum.org/en/developers/docs/"
+                  title="Ethereum development documentation"
+                  >Ethereum development documentation</a>
+              </li>
+              <li>
+                <a
+                  href="https://docs.ipfs.tech/"
+                  title="IPFS documentation"
+                  >IPFS documentation</a>
+              </li>
+              <li>
+                <a
+                  href="https://web3js.readthedocs.io/"
+                  title="Web3.js documentation"
+                  >Web3.js documentation</a>
+              </li>
+              <li>
+                <a href="https://loading.io/icon/">Icon Loading loading.io</a>
+              </li>
+            </ul>
+          </div>
+          <div data-aos="zoom-in" class="col item social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i> </a
+            ><a href="#"><i class="fa-brands fa-github"> </i></a>
+            <a href="#"><i class="fa-brands fa-instagram"> </i> </a>
+          </div>
+        </div>
+        <p class="copyright">AuthenChain © 2024</p>
+      </div>
+    </footer>
+    <!-- Script Function -->
+     <div >
+      <i onclick="topFunction()" id="scroll-btn" class="fa-solid fa-angle-up"></i>
+    </div>
+    <div><a href="mailto:subhadipguchhait106@gmail.com?subject=From AuthenChain Site"> 
+      <i class="mail-us fa-solid fa-headset"></i>
+    </a>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>    <!-- Bootstrap framework -->
+    <script src="../JavaScript/purecounter.min.js"></script>
+    <script src="../JavaScript/aos.js"></script>
+    <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/App.js"></script>
+    <script src="../node_modules\web3\dist\web3.min.js"></script>
+
+    <script defer>
+  $(".loader-wraper").fadeOut("slow");
+    </script>
+  </body>
+</html>

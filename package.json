@@ -1,0 +1,17 @@
+{
+  "name": "sih",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ethereumjs/tx": "^5.4.0",
+    "@ethersproject/providers": "^5.7.2",
+    "@sindresorhus/is": "^7.0.0",
+    "@szmarczak/http-timer": "^5.0.1"
+  }
+}
