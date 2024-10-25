@@ -15,6 +15,20 @@ AuthenChain is an innovative document verification platform that leverages block
 - Multilingual Support
 
 
+## Screenshots
+
+![App Screenshot](https://github.com/Subhadip956425/DocumentVerification_System/blob/main/Screenshot%202024-10-25%20203848.png)
+
+![App Screenshot](https://github.com/Subhadip956425/DocumentVerification_System/blob/main/Screenshot%202024-10-25%20203920.png)
+
+![App Screenshot](https://github.com/Subhadip956425/DocumentVerification_System/blob/main/Screenshot%202024-10-25%20203940.png)
+
+![App Screenshot](https://github.com/Subhadip956425/DocumentVerification_System/blob/main/Screenshot%202024-10-25%20204106.png)
+
+![App Screenshot](https://github.com/Subhadip956425/DocumentVerification_System/blob/main/Screenshot%202024-10-25%20204320.png)
+
+
+
 
 ## Tech Stack
 
