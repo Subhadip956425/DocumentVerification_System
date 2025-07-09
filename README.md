@@ -3,6 +3,10 @@
 
 AuthenChain is an innovative document verification platform that leverages blockchain and AI technologies to provide secure, efficient, and tamper-proof verification of official documents. The platform addresses the need for secure document verification in sectors such as education, healthcare, and government by providing decentralized identity management, automated smart contracts, and AI-powered document authentication.
 
+## 🌟 Live Demo
+
+🔗 **[Visit AuthenChain Live](https://authenchain.netlify.app/)**
+
 
 ## Key Features:
 
